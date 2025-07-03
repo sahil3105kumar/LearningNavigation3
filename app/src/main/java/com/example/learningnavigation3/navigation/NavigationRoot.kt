@@ -63,8 +63,14 @@ fun NavigationRoot(
                         NoteDetailsScreen(id = key.id)
                     }
                 }
+
+                else -> throw IllegalArgumentException("Unknown screen type: $key")
             }
+
+
         }
+
+
 
 
 
