@@ -37,6 +37,7 @@ fun NavigationRoot(
     val backStack= rememberNavBackStack(NoteListScreen)
 
     NavDisplay(
+        modifier = Modifier,
         backStack = backStack,
         entryDecorators = listOf(
             rememberSavedStateNavEntryDecorator(),

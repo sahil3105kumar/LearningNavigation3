@@ -20,7 +20,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             LearningNavigation3Theme {
-                NavigationRoot()
+            Scaffold (modifier = Modifier.fillMaxSize()) { innerPadding->
+                NavigationRoot(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(innerPadding)
+                )
+            }
+
                 }
             }
         }
